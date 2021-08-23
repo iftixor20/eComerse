@@ -50,6 +50,10 @@
   .site-footer__top-content {
     width: 50%;
     text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -57,6 +61,9 @@
   .site-footer__top-content {
     width: 100%;
     text-align: left;
-    margin-bottom: 35px;
+  }
+
+  .site-footer__top {
+    margin-top: 70px; 
   }
 }

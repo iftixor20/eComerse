@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eCommerce</title>
+  <title>freshnesecom</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.scss">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -20,7 +21,7 @@
       <div class="site-nav__content--wrapper">
         <ul class="site-nav__list">
           <li class="site-nav__item">
-            <a class="site-nav__link link-green" href="#">
+            <a class="site-nav__link link-green" href="./index.html">
               Chat with us
             </a>
           </li>
@@ -48,13 +49,12 @@
             </a>
           </li>
           <li class="second-list__item">
-            <a class="second-list__link link-green" href="#">
+            <a class="second-list__link link-green" href="./category.html">
               Careers
             </a>
           </li>
         </ul>
       </div>
-      <hr class="site-nav__hr">
     </nav>
   </div>
   <main class="site-main">
@@ -63,31 +63,29 @@
       <div class="container">
         <div class="form-wrapper">
 
-          <a class="site-logo" href="#">
-            <img class="form-wrapper__logo" src="./img/freshnesecom.svg" alt="" width="177" height="48">
+          <a class="site-logo" href="./index.html">
+            <img class="form-wrapper__logo" src="./img/freshnesecom.svg" alt="site logo" width="177" height="48">
           </a>
 
           <div class="form-wrapper-content">
-            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-              <div class="custom">
-                <select class="custom-select" name="custom">
-                  <option value="0">All categories</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                  <option value="3">Citroen</option>
-                </select>
-              </div>
-              <input class="search-form" type="search" name="search" placeholder="Search Products, categories ...">
-            </form>
-
-            <a class="search-logo" href="#">
-              <img class="search-img" src="./img/icon-search.svg" alt="" width="16" height="16">
-            </a>
+            <!-- <div class="form-wrapper__list"> -->
+              <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="custom">
+                  <select class="custom-select" name="custom">
+                    <option value="0">All categories</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                  </select>
+                </div>
+                <input class="search-form" type="search" name="search" placeholder="Search Products, categories ...">
+              </form>
+  
+              <a class="search-logo" href="#">
+                <img class="search-img" src="./img/icon-search.svg" alt="" width="16" height="16">
+              </a>
+            <!-- </div> -->
           </div>
-
-          <button class="form-wrapper__button" type="button">
-            <img class="form-wrapper__button-img" src="./img/icon-search.svg" alt="" width="25" height="25">
-          </button>
 
           <div class="button">
             <a class="button-people" href="#">
@@ -95,7 +93,7 @@
                 <path d="M3 22l.8-2.9c2.6-9.5 13.8-9.5 16.4 0L21 22" stroke="#151515" stroke-width="2.5"
                   stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M12 12a5 5 0 100-10 5 5 0 000 10z" stroke="#151515" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="bevel"/>
+                  stroke-linejoin="bevel" />
               </svg>
             </a>
 
@@ -103,15 +101,13 @@
               <svg width="24" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M17.9 19.8H6a1.4 1.4 0 01-1.4-1L2.1 8.2a.7.7 0 01.7-1h18.4a.7.7 0 01.7 1l-2.6 10.6a1.4 1.4 0 01-1.4 1v0zM9.8 2.1L6.9 7.3M13.9 2.1l2.9 5.2"
-                  stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
           </div>
-
           <button class="form-wrapper__toggler"></button>
 
           <div class="form-wrapper__features">
-
             <ul class="form-wrapper__list">
               <li class="form-wrapper__item">
                 <a class="form-wrapper__link" href="#">
@@ -163,6 +159,26 @@
             </ul>
           </div>
         </div>
+
+        <div class="form-content">
+          <div class="form-content__list">
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="form-content__custom">
+                <select class="form-content__custom-select" name="custom">
+                  <option value="0">All categories</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                </select>
+              </div>
+              <input class="form-content__search-form" type="search" name="search" placeholder="Search Products, categories ...">
+            </form>
+
+            <a class="form-content__search-logo" href="#">
+              <img class="form-content__search-img" src="./img/icon-search.svg" alt="" width="16" height="16">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -175,19 +191,21 @@
                 Bakery
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
-                Fruit and vegetables
-              </h3>
+              <a class="features-item__link" href="category.html">
+                <h3 class="features-item__title">
+                  Fruit and vegetables
+                </h3>
+              </a>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
@@ -195,9 +213,9 @@
                 Meat and fish
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
@@ -205,9 +223,9 @@
                 Drinks
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
@@ -215,9 +233,9 @@
                 Kitchen
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
@@ -225,9 +243,9 @@
                 Special nutrition
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
@@ -235,9 +253,9 @@
                 Baby
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
             <li class="features-item">
@@ -245,9 +263,9 @@
                 Pharmacy
               </h3>
               <ul class="drop-down__list">
-                <li class="drop-down__item">test 1</li>
-                <li class="drop-down__item">test 2</li>
-                <li class="drop-down__item">test 3</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
+                <li class="drop-down__item">test</li>
               </ul>
             </li>
           </ul>
@@ -351,8 +369,8 @@
             </li>
           </ul>
 
-          <button class="prodact-content__button" type="button">More products
-            <img src="./img/icon-down.svg" alt="">
+          <button class="prodact-content__button" type="button">
+            More products
           </button>
         </div>
 
@@ -416,8 +434,8 @@
             </li>
           </ul>
 
-          <button class="prodact-content__button" type="button">More products
-            <img src="./img/icon-down.svg" alt="">
+          <button class="prodact-content__button" type="button">
+            More products
           </button>
         </div>
 
@@ -462,8 +480,8 @@
   </section>
 
   <section class="corusel">
-    <div class="corusel-wrapper">
-      <div class="container">
+    <div class="container">
+        <div class="corusel-wrapper">
         <div class="card-footer__up">
           <h2 class="card-footer__up-heading">Our customers says</h2>
 
@@ -471,43 +489,45 @@
             <img src="./img/" alt="">
           </button>
         </div>
-      </div>
+        <div class="corusel-list">
+          <div class="corusel-content">
+            <p class="corusel-content__text">
+              “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all
+              what
+              you need by writiing a text here “
+            </p>
 
-      <div class="corusel-list">
-        <div class="corusel-content">
-          <p class="corusel-content__text">
-            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what
-            you need by writiing a text here “
-          </p>
+            <h2 class="corusel-content__heading">
+              Name and Surname
+            </h2>
+            <img class="corusel-content__img" src="./img/avatar-author.svg" alt="">
+          </div>
 
-          <h2 class="corusel-content__heading">
-            Name and Surname
-          </h2>
-          <img class="corusel-content__img" src="./img/avatar-author.svg" alt="">
-        </div>
+          <div class="corusel-content corusel-content__two">
+            <p class="corusel-content__text">
+              “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all
+              what
+              you need by writiing a text here “
+            </p>
 
-        <div class="corusel-content corusel-content__two">
-          <p class="corusel-content__text">
-            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what
-            you need by writiing a text here “
-          </p>
+            <h2 class="corusel-content__heading">
+              Name and Surname
+            </h2>
+            <img class="corusel-content__img" src="./img/avatar-author.svg" alt="">
+          </div>
 
-          <h2 class="corusel-content__heading">
-            Name and Surname
-          </h2>
-          <img class="corusel-content__img" src="./img/avatar-author.svg" alt="">
-        </div>
+          <div class="corusel-content corusel-content__three">
+            <p class="corusel-content__text">
+              “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all
+              what
+              you need by writiing a text here “
+            </p>
 
-        <div class="corusel-content corusel-content__three">
-          <p class="corusel-content__text">
-            “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what
-            you need by writiing a text here “
-          </p>
-
-          <h2 class="corusel-content__heading">
-            Name and Surname
-          </h2>
-          <img class="corusel-content__img" src="./img/avatar-author.svg" alt="">
+            <h2 class="corusel-content__heading">
+              Name and Surname
+            </h2>
+            <img class="corusel-content__img" src="./img/avatar-author.svg" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -585,18 +605,21 @@
       <div class="blog-wrapper">
         <div class="blog-wrapper__chef">
           <span class="blog-wrapper__span">Dinner tips</span>
-          <h3 class="blog-wrapper__title">
-            Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
-          <span class="blog-wrapper__author">Author
-            <time class="blog-wrapper__time" datetime="2020-06-17">17. 6. 2020</time>
-          </span>
+          
+          <div class="blog-wrapper__comtent">
+            <h3 class="blog-wrapper__title">
+              Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+            <span class="blog-wrapper__author">Author
+              <time class="blog-wrapper__time" datetime="2020-06-17">17. 6. 2020</time>
+            </span>
+          </div>
         </div>
 
         <div class="blog-vegitable">
           <img class="blog-vegitable__img" src="./img/vegetables.jpg" alt="picture vegitable food" width="269"
             height="180">
 
-          <span class="blog-vegitable__span">Vegetable</span>
+          <span class="blog-vegitable__span">Vegetable</span> 
 
           <h3 class="blog-vegitable__title">
             Which vegetable your family will love and want’s eat each day
@@ -609,6 +632,17 @@
         </div>
 
         <ul class="vegitable-list">
+          <li class="vegitable-item vegitable-item__one">
+            <div class="vegitable-item__wrapper">
+              <span class="blog-vegitable__span">Vegetable</span> 
+              <h4 class="vegitable-item__title">Which vegetable your family will love and want’s eat each day</h4>
+              <span class="vrgitable-item__author">Author
+                <time class="vegitable-item__time" datetime="2020-06-17">14.1.2020</time>
+              </span>
+            </div>
+            <img class="vegitable-item__img" src="./img/vegetables.jpg" alt="picture fruits" width="96" height="96">
+          </li>
+          
           <li class="vegitable-item">
             <div class="vegitable-item__wrapper">
               <h4 class="vegitable-item__title">Salat is kinda good start to your morning routines</h4>
@@ -616,7 +650,7 @@
                 <time class="vegitable-item__time" datetime="2020-06-17">14.1.2020</time>
               </span>
             </div>
-            <img class="vegitable-item__img" src="./img/egg.jpg" alt="picture fruits" width="96" height="96">
+            <img class="vegitable-item__img" src="./img/bg-img.jpg" alt="picture fruits" width="96" height="96">
           </li>
 
           <li class="vegitable-item">
@@ -633,7 +667,7 @@
             <div class="vegitable-item__wrapper">
               <h4 class="vegitable-item__title">Salat is kinda good start to your morning routines</h4>
               <span class="vrgitable-item__author">Author
-                <time class="vegitable-item__time" datetime="2020-06-17">14.1.2020</time>
+                <time class ="vegitable-item__time" datetime="2020-06-17">14.1.2020</time>
               </span>
             </div>
             <img class="vegitable-item__img" src="./img/bg-img.jpg" alt="picture fruits" width="96" height="96">
@@ -880,15 +914,16 @@
             </a>
           </li>
         </ul>
-
-        <div class="copyright-link__wrapper">
-          <a class="copyright-link" href="#">Copyright © 2020 petrbilek.com</a>
-        </div>
       </div>
     </section>
-  </footer>
 
-  <script src="js/main.js"></script>
+    <div class="copyright">
+      <div class="container">
+        <a class="copyright-link" href="#">Copyright © 2020 petrbilek.com</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

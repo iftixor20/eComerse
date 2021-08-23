@@ -35,6 +35,20 @@
   line-height: 22px;
   color: #151515;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 10px;
+    background-image: url(../../img/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 13px;
+  }
 }
 
 .card-features {
@@ -196,7 +210,7 @@
   }
 }
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 685px) {
 
   .card-features {
     max-width: 800px;

@@ -12,7 +12,6 @@
 
 .prodact-list {
   display: flex;
-  // margin-left: 33px;
 }
 
 .prodact-content__title {
@@ -40,7 +39,7 @@
 }
 
 .prodact-content__item {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .prodact-content__link {
@@ -49,15 +48,33 @@
   font-size: 14px;
   line-height: 19px;
   color: #6A983C;
-  text-decoration: none;
-  border-bottom: 1px solid #6A983C;
+  text-decoration: underline;
 }
 
 .prodact-content__button {
+  font-family: "Poppins";
   padding: 12px 16px;
   background-color: #f5f5f5;
   border-radius: 5px;
   border: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  display: flex;
+  align-items: center;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../img/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 13px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -71,7 +88,6 @@
 
     &:not(:nth-child(odd)) {
       margin-left: 0;
-      justify-content: space-between;
     }
   }
 
@@ -91,6 +107,11 @@
 
   .prodact-content__link {
     font-size: 18px;
+    margin-right: 15px;
+
+    &:not(:last-child) {
+      margin-bottom:13px;
+    }
   }
 
   .prodact-content__button {
@@ -130,7 +151,7 @@
 
   .prodact-content__item {
     &:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
   }
 

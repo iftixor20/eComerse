@@ -1,6 +1,6 @@
 .features {
   background-color: #F9F9F9;
-  margin-bottom: 86px;
+  margin-bottom: 45px;
 }
 
 .features-content__wrapper {
@@ -26,13 +26,15 @@
   white-space: nowrap;
 }
 
+.features-item__link{
+  text-decoration: none;
+}
+
 .features-item {
   position: relative;
   transition: opacity 0.3s ease;
-  margin-bottom: 10px;
 
   &:hover {
-    opacity: 0.7;
     cursor: pointer;
   }
 
@@ -51,15 +53,21 @@
 
   &:not(:last-child) {
     margin-right: 54px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
 .drop-down__list {
   @include list-unstyled;
   position: absolute;
+  z-index: 1;
   width: 100px;
-  background-color: white;
-  border-radius: 5px;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #8eca53;
+  color: #ffffff;
+  border-radius: 2px;
   padding: 10px;
   display: none;
 }

@@ -1,5 +1,5 @@
 .blog {
-  padding-bottom: 122px;
+  padding-bottom: 65px;
 }
 
 .blog-wrapper {
@@ -30,7 +30,7 @@
 }
 
 .blog-wrapper__title {
-  font-family: "Poppins";
+  font-family: "Poppins",Arial, sans-serif;
   @include title-unstyled;
   font-weight: 600;
   font-size: 22px;
@@ -39,6 +39,10 @@
   width: 380px;
   padding-top: 228px;
   margin-bottom: 8px;
+
+  &:hover   {
+    cursor: pointer;
+  }
 }
 
 .blog-wrapper__author {
